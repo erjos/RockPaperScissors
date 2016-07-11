@@ -48,6 +48,10 @@ public class RoshamboApp {
 			player.setName("Boring-Ass Dude");
 			break;
 		default:
+			//setting the default player to Random so there is always an opponent
+			//otherwise there would be an exception if the input didnt match the strings 'wild' or 'boring'
+			player = new RandomPlayer();
+			player.setName(opponent);
 			break;
 		}
 

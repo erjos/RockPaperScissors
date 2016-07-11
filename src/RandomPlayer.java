@@ -5,8 +5,10 @@ public class RandomPlayer extends Player{
 	@Override
 	public Roshambo generateRoshambo() {
 		Roshambo choice;
+		//this will generate a random int between 1 and 3
 		int random = (int) (Math.random() * 3 + 1);
 		
+		//switch statement says which number corresponds to the ENUMs
 		switch (random){
 		case 1: 
 			return choice = Roshambo.ROCK;
